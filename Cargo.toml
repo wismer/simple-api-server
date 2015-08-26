@@ -5,3 +5,6 @@ authors = ["wismer <matthewhl@gmail.com>"]
 
 [dependencies.iron]
 version = "*"
+
+[dependencies.hyper]
+version = "*"
