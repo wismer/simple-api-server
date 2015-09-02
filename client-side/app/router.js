@@ -7,8 +7,8 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('cards');
-  this.route('expansions', function() {
-    this.route('expansion');
+  this.route('expansions', { path: '/expansions' }, function() {
+    this.route('expansion', { path: ':expansion_slug' });
   });
 });
 

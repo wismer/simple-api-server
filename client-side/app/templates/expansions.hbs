@@ -1,1 +1,7 @@
 {{outlet}}
+
+
+{{#each model key='@index' as |expansion|}}
+  <li>{{expansion.slug}}</li>
+  <li>{{link-to 'expansion' expansion.id}}</li>
+{{/each}}
